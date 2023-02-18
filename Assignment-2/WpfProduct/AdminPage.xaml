@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfProduct.AdminPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfProduct"
+        mc:Ignorable="d"
+        Title="AdminPage" Height="450" Width="800">
+    <Grid Loaded="Grid_Loaded">
+        <DataGrid x:Name="DGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,0,272"/>
+        <TextBox x:Name="TxtDelProdId" HorizontalAlignment="Left" Margin="68,217,0,0" TextWrapping="Wrap" Text="Productid" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="DelButton" Content="Delete" HorizontalAlignment="Left" Margin="88,251,0,0" VerticalAlignment="Top" Click="DelButton_Click"/>
+        <TextBox x:Name="txtProductAdd" HorizontalAlignment="Left" Margin="236,216,0,0" TextWrapping="Wrap" Text="Productid" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtNameAdd" HorizontalAlignment="Left" Margin="236,242,0,0" TextWrapping="Wrap" Text="Productname" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtAmountAdd" HorizontalAlignment="Left" Margin="369,216,0,0" TextWrapping="Wrap" Text="Amount" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtPriceAdd" HorizontalAlignment="Left" Margin="369,242,0,0" TextWrapping="Wrap" Text="Price" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="addBtn" Content="Insert" HorizontalAlignment="Left" Margin="345,273,0,0" VerticalAlignment="Top" Click="addBtn_Click"/>
+        <TextBox x:Name="txtProductUpdate" HorizontalAlignment="Left" Margin="541,221,0,0" TextWrapping="Wrap" Text="Productid" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtNameUpdate" HorizontalAlignment="Left" Margin="541,247,0,0" TextWrapping="Wrap" Text="Productname" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtAmountUpdate" HorizontalAlignment="Left" Margin="674,221,0,0" TextWrapping="Wrap" Text="Amount" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtPriceUpdate" HorizontalAlignment="Left" Margin="674,247,0,0" TextWrapping="Wrap" Text="Price" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="updateBtn" Content="Update" HorizontalAlignment="Left" Margin="650,278,0,0" VerticalAlignment="Top" Click="updateBtn_Click"/>
+
+    </Grid>
+</Window>
